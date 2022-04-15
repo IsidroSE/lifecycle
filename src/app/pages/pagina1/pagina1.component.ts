@@ -9,6 +9,8 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 export class Pagina1Component implements OnInit, OnChanges, DoCheck, AfterContentInit, 
   AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
 
+  nombre: string = 'Isidro';
+
   constructor() {
     console.log('constructor');
   }
@@ -36,13 +38,17 @@ export class Pagina1Component implements OnInit, OnChanges, DoCheck, AfterConten
   ngAfterViewChecked(): void {
     console.log('ngAfterViewChecked');
   }
-  
+
   ngOnDestroy(): void {
     console.log('ngOnDestroy');
   }
 
   ngOnInit(): void {
     console.log('ngOnInit');
+  }
+
+  guardar() {
+
   }
 
 }
